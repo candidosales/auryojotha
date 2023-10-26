@@ -2,9 +2,11 @@
   "showAmazonTag": false,
   "showCountingSell": false,
   "showBuyAudiobookButton": false,
-  "showBuyAudiobookSection": false,
-  "showDownloadFreeChapterSection": false,
-  "showAboutAuthorSection": true,
+  "sections": {
+    "showBuyAudiobook": false,
+    "showDownloadFreeChapter": false,
+    "showAboutAuthor": true
+  },
   "seo": {
     "title": "Livro Acalanto por Auryo Jotha",
     "description": "É uma leitura em que nem a luz do dia consegue afastar o que nos assombra todos os dias",

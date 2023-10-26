@@ -9,21 +9,17 @@ import Buy from '../components/Buy.astro';
 import Footer from '../components/Footer.svelte';
 import AudioBook from '../components/AudioBook.astro';
 import AboutAuthor from '../components/AboutAuthor.astro';
-import {
-  showBuyAudiobookSection,
-  showDownloadFreeChapterSection,
-  showAboutAuthorSection,
-} from '../config.json';
+import { sections } from '../config.json';
 ---
 
 <Layout title='Book Title'>
   <HeroSection />
   <WhyReadThisBook />
-  {showAboutAuthorSection && <AboutAuthor />}
-  {showBuyAudiobookSection && <AudioBook />}
+  {sections.showAboutAuthor && <AboutAuthor />}
+  {sections.showBuyAudiobook && <AudioBook />}
 
   <Interviews />
-  {showDownloadFreeChapterSection && <FreeChapter />}
+  {sections.showDownloadFreeChapter && <FreeChapter />}
 
   <WhatsInside />
   <Buy />
