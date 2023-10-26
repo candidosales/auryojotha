@@ -1,55 +1,47 @@
 ---
-import Instagram from "./icons/Instagram.svelte";
-import Linkedin from "./icons/Linkedin.svelte";
-import Twitter from "./icons/Twitter.svelte";
-import { Image } from "astro:assets";
+import Instagram from './icons/Instagram.svelte';
+import Twitter from './icons/Twitter.svelte';
+import { Image } from 'astro:assets';
 
-import { author } from "../config.json";
+import { author } from '../config.json';
 ---
 
-<div class="bg-gray-50">
-  <div class="max-w-screen-xl mx-auto py-16">
-    <h2 class="text-5xl mb-8 font-semibold text-gray-900 px-4">
-      Por que ler esse<!-- -->&nbsp;<span class="underline">livro?</span>
-    </h2><div class="flex-none sm:flex">
-      <div class="sm:flex-1 px-4">
+<div class='bg-gray-50'>
+  <div class='max-w-screen-xl mx-auto py-16'>
+    <h2 class='text-5xl mb-8 font-semibold text-gray-900 px-4'>
+      Por que ler esse<!-- -->&nbsp;<span class='underline'>livro?</span>
+    </h2><div class='flex-none sm:flex'>
+      <div class='sm:flex-1 px-4'>
         <Image
-          class="mb-4 rounded-md"
-          src={"/author.jpeg"}
+          class='mb-4 rounded-md'
+          src={'/auryo-profile.png'}
           width={500}
           height={500}
           alt={author.name}
-          format={"avif"}
+          format={'avif'}
         />
-      </div><div class="text-lg text-gray-600 sm:flex-1 px-4 font-body">
-        <p class="mb-4">
-          O livro parte de uma pesquisa de campo que durou aproximadamente dois
-          anos.
-        </p><p class="mb-4">
-          Nasceu da construção da personagem, quando o autor investigava a Lenda
-          do Cabeça de Cuia como parte dos estudos do laboratório de criação
-          para a montagem da peça teatral “Três”do grupo Épica Cia de Criação. O
-          texto desenvolvido pelo dramaturgo e diretor Wanden Lima que fez uma
-          releitura da peça de Gomes Campos “O pescador e o Rio”, gestou em
-          Alisson Carvalho um desejo de investigar mais profundamente não
-          somente a lenda supracitada, mas o conjunto de histórias que permeavam
-          o imaginário dos ribeirinhos piauienses. .
-        </p><p class="mb-4">
-          Essa curiosidade se transformou nos primeiros rascunhos e surgia a
-          obra Chapada do Corisco.
-        </p><p class="mb-4">
-          O livro é um apanhado de muitas das crenças dos piauienses e condensa
-          também elementos importantes para a cultura dos ribeirinhos.
-        </p><p class="text-sm italic text-gray-500">
+      </div><div class='text-lg text-gray-600 sm:flex-1 px-4 font-body'>
+        <p class='mb-4'>
+          A história se inspirou em contos populares, pesadelos, relatos de
+          amigos, pessoais e lendas – Bicho-papão, Tutu, Cuca, Quibungo, Dom
+          Maracujá, Velho do Saco, Pesadeira, Titi Maruê, Bicho-homem, Bicho de
+          fogo etc. No entanto, não a considero como uma ficção folclórica.
+        </p><p class='mb-4'>
+          Acalanto é uma história sobre bicho papão, nostalgia, medos, infância,
+          memórias enterradas, familiares abusivos. É uma leitura em que nem a
+          luz do dia consegue afastar o que nos assombra todos os dias.
+        </p><p class='mb-4'>
+          Se quiser se arriscar por essas páginas: puxe o pé para dentro das
+          cobertas, deixe uma luz acesa. Debaixo da cama é onde estas coisas se
+          criam e se escondem, elas começam feito um ponto – pequeno e
+          inofensivo –, no entanto, logo ocupam todo o quarto e vão se
+          espremendo pela porta para tomar o resto da casa.<br />
+           Teresina, Piauí
+        </p><p class='text-sm italic text-gray-500'>
           {author.location}
-        </p><div class="flex flex-row my-2">
-          <a href={author.instagramUrl} target="_blank"><Instagram /></a>
-          <a href={author.twitterUrl} target="_blank"><Twitter /></a><a
-            href={author.linkedinUrl}
-            target="_blank"
-          >
-            <Linkedin />
-          </a>
+        </p><div class='flex flex-row my-2'>
+          <a href={author.instagramUrl} target='_blank'><Instagram /></a>
+          <a href={author.twitterUrl} target='_blank'><Twitter /></a>
         </div>
       </div>
     </div>

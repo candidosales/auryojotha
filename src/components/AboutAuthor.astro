@@ -1,0 +1,64 @@
+---
+import Instagram from './icons/Instagram.svelte';
+import Twitter from './icons/Twitter.svelte';
+import { Image } from 'astro:assets';
+
+import { author } from '../config.json';
+---
+
+<div class='bg-gray-50'>
+  <div class='max-w-screen-xl mx-auto py-16'>
+    <h2 class='text-5xl mb-8 font-semibold text-gray-900 px-4'>
+      Sobre o<!-- -->&nbsp;<span class='underline'>autor</span>
+    </h2><div class='flex-none sm:flex'>
+      <div class='sm:flex-1 px-4'>
+        <Image
+          class='mb-4 rounded-md'
+          src={'/author-about.png'}
+          width={500}
+          height={500}
+          alt={author.name}
+          format={'avif'}
+        />
+      </div><div class='text-lg text-gray-600 sm:flex-1 px-4 font-body'>
+        <p class='mb-4'>
+          Auryo Jotha (1995) vive num pé de meia chamado Piauí, escritor,
+          editor, podcaster, redator chefe do site Geleia Total. Fisgado desde
+          cedo pela ficção científica, terror e fantasia; e a vontade de criar
+          fez do leitor um contista, que busca sempre trazer elementos do seu
+          cotidiano e do imaginário local em suas histórias.
+        </p><p class='mb-4'>
+          Em 2022, venceu o Prêmio Odisseia de Literatura na categoria Narrativa
+          curta de fantasia com Miolo de Boi, conto que faz parte da antologia
+          Farras Fantásticas (Corvus, 2021).
+        </p><p class='mb-4'>
+          Também venceu o Prêmio Wattys com o livro de contos Carne Morta
+          (Wattpad, 2018), e foi finalista do prêmio ABERST com Pássara
+          (Lendari, 2020). Tem histórias publicadas em antologias e revistas
+          literárias como As Crônicas da UniFenda (Plutão Livros), Mitografias –
+          Volume III: Mitos de Trindade e Revista Escambanáutica #2, ano 2.
+        </p><p class='mb-4'>
+          É uma das vozes do “Covil do Terror”, podcast que comenta sobre o
+          gênero do horror em suas mais diversas mídias como livros, filmes,
+          séries, quadrinhos; além de entrevistar escritores que trabalham com o
+          gênero pra conversar sobre carreira e processo criativo.
+        </p><p class='mb-4'>
+          Membro de coletivos literários: "Motim" (RJ/PI), por onde editou
+          contos, coletâneas e publicou o conto de terror e suspense Zoo (2021)
+          sobre a lenda do Pé de Garrafa, e Acalanto (2023), história de terror
+          inspirada em causos e relatos sobre bicho-papão; "Ordem da Traça"
+          (SP), um clube de leitura focado revistas e periódicos literários
+          publicados nos últimos anos pelo Brasil, através do qual grava o
+          podcast “Traças na Língua” debatendo sobre a leitura do mês;
+          “Escambau” (CE), grupo de escrita criativa focado em ficção
+          especulativa decolonial.
+        </p><p class='text-sm italic text-gray-500'>
+          {author.location}
+        </p><div class='flex flex-row my-2'>
+          <a href={author.instagramUrl} target='_blank'><Instagram /></a>
+          <a href={author.twitterUrl} target='_blank'><Twitter /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

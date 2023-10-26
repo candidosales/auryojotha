@@ -2,32 +2,35 @@
   "showAmazonTag": false,
   "showCountingSell": false,
   "showBuyAudiobookButton": false,
+  "showBuyAudiobookSection": false,
+  "showDownloadFreeChapterSection": false,
+  "showAboutAuthorSection": true,
   "seo": {
-    "title": "Livro Chapada do Corisco por Alisson Carvalho",
-    "description": "Um remador solitário e a tragédia que maculou a história da vila de pescadores",
-    "canonical": "https://www.livrochapadadocorisco.com",
+    "title": "Livro Acalanto por Auryo Jotha",
+    "description": "É uma leitura em que nem a luz do dia consegue afastar o que nos assombra todos os dias",
+    "canonical": "https://www.auryojotha.com",
     "locale": "pt_BR",
-    "image": "/og_image_800_600_2.png"
+    "image": "/og_image_800_600.png"
   },
   "theme": {
     "color": "#f59e0b"
   },
   "author": {
-    "name": "Alisson Carvalho",
-    "email": "alissonmssc@gmail.com",
+    "name": "Auryo Jotha",
+    "email": "auryojmr@gmail.com",
     "location": "Teresina, Piauí",
-    "twitterUrl": "https://twitter.com/rascunholiquido",
-    "instagramUrl": "https://www.instagram.com/rascunhosliquidos/",
-    "linkedinUrl": "https://www.linkedin.com/in/alisson-carvalho-854bb0131/"
+    "twitterUrl": "https://twitter.com/auryo_j",
+    "instagramUrl": "https://www.instagram.com/auryoj/"
   },
   "book": {
-    "title": "Chapada do Corisco",
-    "isbn": "978-65-89313-54-0",
+    "title": "Acalanto",
+    "isbn": "",
+    "asin": "B0C4J16L8W",
     "releaseDate": "2022-03-28",
-    "price": "34.9",
+    "price": "5.99",
     "currency": "BRL",
     "buyPhysicalUrl": "https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho",
-    "buyDigitalUrl": "https://www.amazon.com.br/Chapada-do-Corisco-Alisson-Carvalho-ebook/dp/B09WTD7RW9/",
+    "buyDigitalUrl": "https://www.amazon.com.br/dp/B0C4J16L8W",
     "buyAudiobookUrl": "#"
   }
 }

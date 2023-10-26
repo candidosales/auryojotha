@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Github from "./icons/Github.svelte";
-  import Linkedin from "./icons/Linkedin.svelte";
-  import Medium from "./icons/Medium.svelte";
-  import Twitter from "./icons/Twitter.svelte";
+  import Github from './icons/Github.svelte';
+  import Linkedin from './icons/Linkedin.svelte';
+  import Medium from './icons/Medium.svelte';
+  import Twitter from './icons/Twitter.svelte';
 
   interface InterviewCompany {
     name: string;
@@ -23,17 +23,16 @@
 
   const interviews: Array<Interviews> = [
     {
-      imageUrl: "/auryo.png",
-      name: "Auryo Jota",
+      imageUrl: '/ayrton.jpeg',
+      name: 'Ayrton de Souza',
       company: {
-        name: "Escritor e Redator",
-        url: "",
+        name: 'Escritor, revisor e redator',
+        url: '',
       },
       summary:
-        "Desde o título, a obra é carregada de referências. A região de Teresina, a capital do Piauí, também é conhecida como Chapada do Corisco devido às fortes trovoadas e constantes raios que caem durante as tempestades... A preocupação com questões sociais é um ponto central na obra. Desigualdade, preconceito, pessoas invisibilizadas (se ninguém vê, elas não existem, não incomodam), a normalização da violência sofrida por determinados corpos.",
-      location: "Teresina, Piauí",
-      twitterUrl: "https://twitter.com/auryo_j",
-      mediumUrl: "https://medium.com/@auryoj",
+        'A leitura começou leve, me dando pequenos arrepios enquanto eu lia de noite, mas quando menos percebi, já estava envolvido na personagem da Lúcia. É muito estranho olhar para sua casa e notar um pouco da minha também, acredito que esse seja o mérito da ótima escrita.',
+      location: 'Teresina, Piauí',
+      twitterUrl: 'https://twitter.com/ayrtonde_souza',
     },
   ];
 </script>
@@ -59,7 +58,7 @@
             <p class="text-base text-gray-600 mb-1 font-body">
               {summary}
             </p>
-            <p class="text-sm italic text-gray-500  font-body">{location}</p>
+            <p class="text-sm italic text-gray-500 font-body">{location}</p>
             <div class="flex flex-row my-2">
               {#if githubUrl}
                 <a title="Github link" href={githubUrl} target="_blank"

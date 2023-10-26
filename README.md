@@ -1,4 +1,4 @@
-# Landing Page Book - Astro + Svelte + Tailwind + Vercel Edge
+# Auryo Jotha
 
 Inspired by: https://14habits.com/
 
